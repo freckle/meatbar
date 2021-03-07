@@ -3,7 +3,7 @@ WORKDIR /opt/meatbar
 COPY ["app", "./app"]
 COPY ["src", "./src"]
 COPY ["webapp", "./webapp"]
-COPY ["README.md", "stack.yaml", "package.yaml", "."]
+COPY ["README.md", "stack.yaml", "package.yaml", "./"]
 RUN ["stack", "build"]
 COPY . .
 EXPOSE 8080
