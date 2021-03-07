@@ -6,5 +6,6 @@ COPY ["webapp", "./webapp"]
 COPY ["README.md", "stack.yaml", "package.yaml", "."]
 RUN ["stack", "build"]
 COPY . .
+EXPOSE 8080
 ENTRYPOINT ["stack"]
 CMD ["run"]
